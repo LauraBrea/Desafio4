@@ -1,0 +1,19 @@
+
+<h1>Lista de productos</h1>
+<div id="listContainer">
+    {{#each products}}
+        <div class="product" style="display: flex; gap: 20px; align-items: center;">
+            <div style="background-color: red; width: 40px; height: 40px;" ></div>
+            <h4>{{title}}</h4>
+            <p>{{description}}</p>
+            <p>Category:{{category}}</p>
+            <p>Price: {{price}}</p>
+            <p>Id: {{id}}</p>
+            <p>Code :{{code}}</p>
+            <p>Stock:{{stock}}</p>
+        </div>
+    {{/each}}
+</div>
+
+
+

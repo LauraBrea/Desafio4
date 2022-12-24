@@ -1,0 +1,72 @@
+[
+    {
+        "id": 78,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 47,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 85,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 6,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 33,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 75,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 49,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 57,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 69,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    },
+    {
+        "id": 93,
+        "title": "Producto prueba",
+        "price": 200,
+        "category": "producto",
+        "thumbnail": "Sin imagen"
+    }
+]
