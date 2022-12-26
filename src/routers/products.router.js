@@ -30,6 +30,9 @@ productsRouter.post("/", async (req, res) => {
         const {title, description, code, price, status, stock, category, thumbnail } = req.body;
         await ProductService.createProduct (title, description, code, price, status, stock, category, thumbnail);
         res.status(201).send("New product added");
+            //---- Emit ------
+            const listProducts = ProductService.getProducts();
+            req.io.emit('listChange', listProducts);
     } catch (error) {
         res.status(400).send({ error: 'Incomplete values'});
     }
@@ -42,6 +45,8 @@ productsRouter.put("/:pid?", (req, res) => {
         const {pid} = req.params;
         const putProduct = ProductService.updateProduct(pid, title, description, code, price, status, stock, category, thumbnail );
         res.json(putProduct);
+            //---- Emit ------
+            req.io.emit('listChange', putProduct);
     } catch (error) {
         res.status(400).send({ error: 'Product not found (update)' });
     }
@@ -53,6 +58,8 @@ productsRouter.delete("/:pid?", (req, res) => {
         const {pid} = req.params;
         const delProduct = ProductService.deleteProduct(pid);
         res.json(delProduct);
+            //---- Emit ------
+            req.io.emit('listChange', delProduct);
     } catch (error) {
         res.status(400).send({ error: 'Product not found (delete)' });
     }

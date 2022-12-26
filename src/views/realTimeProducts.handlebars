@@ -2,17 +2,17 @@
 <div id="listContainer">
     {{#each products}}
          <div class="product" style="display: flex; gap: 20px; align-items: center;">
-            <div style="background-color: blue; width: 40px; height: 40px;" ></div>
+            <div><a href="https://www.freeiconspng.com/img/3602" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/edit-new-icon-22.png" width="45" alt="Edit, new, icon" /></a></div>
             <h4>{{title}}</h4>
             <p>{{description}}</p>
-            <p>Category:{{category}}</p>
+            <p>Category: {{category}}</p>
             <p>Price: {{price}}</p>
             <p>Id: {{id}}</p>
-            <p>Code :{{code}}</p>
-            <p>Stock:{{stock}}</p>
+            <p>Code: {{code}}</p>
+            <p>Stock: {{stock}}</p>
         </div>
     {{/each}}
 </div>
 
 <script src="/socket.io/socket.io.js"></script>
-<script src="/js/socket.js"></script>
+<script src="/js/socketClient.js"></script>

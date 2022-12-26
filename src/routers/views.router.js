@@ -5,8 +5,8 @@ const viewsRouter = Router();
 
 viewsRouter.get("/", (req, res) => {
     try {
-        const productsList = JSON.parse(fs.readFileSync("Products.json", "utf-8"));
-        res.status(200).render("home", {products: productsList});
+        const listProducts = JSON.parse(fs.readFileSync("Products.json", "utf-8"));
+        res.status(200).render('home', {products: listProducts});
     } catch (error) {
         res.status(500).send({ error: error.message });
     }
@@ -14,8 +14,8 @@ viewsRouter.get("/", (req, res) => {
 
 viewsRouter.get("/realtimeproducts", (req, res) => {
     try {
-        const productsList = JSON.parse(fs.readFileSync("Products.json", "utf-8"));
-        res.status(200).render('realTimeProducts', {products: productsList})
+        const listProducts = JSON.parse(fs.readFileSync("Products.json", "utf-8"));
+        res.status(200).render('realTimeProducts', {products: listProducts})
     } catch (error) {
         res.status(500).send({ error: error.message });
     }
